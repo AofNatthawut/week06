@@ -46,12 +46,12 @@
                 <td>{{ $item->price }}</td>
                 <td>{{ $item->stock }}</td>
                 <td>
-                    <div class="d-flex justify-birthdate-around px-4">
+                    <div class="d-flex justify-content-around px-4">
                         <a class="btn btn-info" href="{{ route('product.show', $item->id) }}">Show</a>
 
                         <a class="btn btn-primary" href="{{ route('product.edit', $item->id) }}">Edit</a>
 
-                        <form action="{{ route('staff.destroy', $item->id) }}" method="POST"
+                        <form action="{{ route('product.destroy', $item->id) }}" method="POST"
                             onsubmit="return confirm('Confirm delete?')">
                             @csrf
                             @method('DELETE')

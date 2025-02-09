@@ -34,7 +34,7 @@
             <div class="col-md-12">
                 <strong>Photo: </strong>
                 <input type="file" name="photo" class="form-control" value="{{ $staff->photo }}" >
-                <img src="{{ $product->photo }}" height="150" />
+                <img src="{{ $staff->photo }}" height="150" />
             </div>
             <div class="col-md-12">
                 <strong>birthdate:</strong>
